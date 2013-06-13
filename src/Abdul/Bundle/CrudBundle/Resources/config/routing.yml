@@ -1,0 +1,15 @@
+abdul_crud_homepage:
+    pattern:  /home
+    defaults: { _controller: AbdulCrudBundle:Default:index }
+
+abdul_crud_insert: 
+    pattern:  /insert
+    defaults: { _controller: AbdulCrudBundle:Default:insert }
+    
+abdul_crud_delete: 
+    pattern:  /delete
+    defaults: { _controller: AbdulCrudBundle:Default:delete}
+    
+abdul_crud_update: 
+    pattern:  /update
+    defaults: { _controller: AbdulCrudBundle:Default:update}

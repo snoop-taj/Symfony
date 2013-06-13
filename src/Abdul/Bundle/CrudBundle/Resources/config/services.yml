@@ -1,0 +1,7 @@
+parameters:
+#    abdul_crud.example.class: Abdul\Bundle\CrudBundle\Example
+
+services:
+#    abdul_crud.example:
+#        class: %abdul_crud.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

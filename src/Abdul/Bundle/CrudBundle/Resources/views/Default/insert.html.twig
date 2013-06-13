@@ -1,0 +1,23 @@
+{%extends "AbdulCrudBundle:Default:index.html.twig"%}
+{%block container%}
+<form method = "POST" action = "{{path('abdul_crud_insert')}}" data-validate="parsley">
+    <h2> Insert Details </h2>
+    <input type="text" placeholder="First Name" name="firstname" data-trigger="change" data-required="true"> <br />
+    <input type="text" placeholder="Last Name" name="lastname" data-trigger="change" data-required="true"> <br />
+    <input type="text" placeholder="Address1" name="addressline1" data-trigger="change" data-required="true"> <br />
+    <input type="text" placeholder="Address2" name="addressline2" data-trigger="change" data-required="true"> <br />
+    <input type="text" placeholder="City" name="mycity" data-trigger="change" data-required="true"> <br />
+    <input type="text" placeholder="Post Code" name="mypostcode" data-trigger="change" data-required="true"> <br />
+    <input type="text" placeholder="Home Phone" name="myphone1" data-trigger="change" data-required="true"> <br />
+    <input type="text" placeholder="Mobile Phone" name="myphone2" data-trigger="change" data-required="true"> <br />
+    <button type="submit">Add</button>
+    <a href="{{path('abdul_crud_insert')}}">Add User</a>
+    <a href="{{path('abdul_crud_homepage')}}">View User</a>
+    <a href="{{path('abdul_crud_delete')}}">Delete User</a>
+    <a href="{{path('abdul_crud_update')}}">Update User</a>
+    
+</form>
+{%if name is defined%}
+<strong>Sucessfully entered {{name}}</strong>
+{%endif%}
+{%endblock%}

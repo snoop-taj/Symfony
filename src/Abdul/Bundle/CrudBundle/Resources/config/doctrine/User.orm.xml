@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Abdul\Bundle\CrudBundle\Entity\User" table="user">
+    <id name="id" type="integer" column="id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="fName" type="string" column="f_name" length="30" nullable="true"/>
+    <field name="lName" type="string" column="l_name" length="30" nullable="true"/>
+    <field name="addressLine1" type="string" column="address_line_1" length="60" nullable="true"/>
+    <field name="addressLine2" type="string" column="address_line_2" length="60" nullable="true"/>
+    <field name="city" type="string" column="city" length="15" nullable="true"/>
+    <field name="postCode" type="string" column="post_code" length="10" nullable="true"/>
+    <field name="telephoneHome" type="string" column="telephone_home" length="24" nullable="true"/>
+    <field name="telephoneMobile" type="string" column="telephone_mobile" length="24" nullable="true"/>
+  </entity>
+</doctrine-mapping>
